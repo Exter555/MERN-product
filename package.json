@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon ./be/server.js",
     "install": "npm install",
-    "build":"cd fe && npm install && npm run build && cd ..",
-    "start": "cross-env NODE_ENV=production node be/server.js"
+    "build": "cd fe && npm install && npm run build && cd ..",
+    "start": "cross-env NODE_ENV=production node be/server.js",
+    "vercel-build": "npm install && npm run build"
   },
   "keywords": [],
   "author": "",
