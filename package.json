@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./be/server.js"
+    "dev": "cross-env NODE_ENV=development nodemon ./be/server.js",
+    "build": "npm install && cd fe && npm install && npm run build && cd ..",
+    "start": "cross-env NODE_ENV=production node be/server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "@types/express": "^4.17.21"
+    "@types/express": "^4.17.21",
+    "cross-env": "^7.0.3"
   }
 }
