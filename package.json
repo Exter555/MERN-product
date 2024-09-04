@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon ./be/server.js",
+    "dev": "NODE_ENV=development nodemon ./be/server.js",
     "build": "npm install && npm run start && cd fe && npm install && npm run build && cd .. ",
-    "start": "cross-env NODE_ENV=production node be/server.js"
+    "start": "NODE_ENV=production node be/server.js"
   },
   "keywords": [],
   "author": "",
