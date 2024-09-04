@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon ./be/server.js",
-    "build": "npm install && cd fe && npm install && npm run build && cd .. && npm run start",
+    "build": "npm install && npm install --prefix && npm run build --prefix && npm run start",
     "start": "cross-env NODE_ENV=production node be/server.js"
   },
   "keywords": [],
