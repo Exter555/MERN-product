@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development nodemon ./be/server.js",
-    "build": "npm install && cd fe && npm install && npm run build && cd .. && npm run start ",
+    "build": "npm install && cd fe && npm install && npm run build && cd ..",
     "start": "NODE_ENV=production node be/server.js"
   },
   "keywords": [],
